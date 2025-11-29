@@ -6,6 +6,7 @@
     import { fade } from 'svelte/transition'
     import SidebarButton from './sidebar-button.svelte'
     import { appState } from '$lib/app-state.svelte'
+    import { resolve } from '$app/paths'
 
     let showText = $state(false)
 
@@ -55,7 +56,7 @@
                     <SidebarButton
                         class="w-full {page.url.pathname === i.route ? 'bg-base-content/5' : ''}"
                         aria-label="{i.title} 설정으로 이동"
-                        onclick={() => goto(i.route)}
+                        onclick={() => goto(resolve(i.route))}
                     >
                         <Icon icon={i.icon} class="size-7 w-7 h-7" />
 

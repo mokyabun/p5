@@ -13,7 +13,7 @@ const config = {
 			fallback: null,
 		}),
 		paths: {
-			base: '/p5'
+			base: '/p5',
 		},
 		output: {
 			bundleStrategy: 'single'

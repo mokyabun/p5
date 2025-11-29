@@ -1,4 +1,5 @@
 import p5 from 'p5';
+import ProfileImage from '$lib/assets/profile.jpeg';
 
 export function sketch(p: p5) {
 	let img: p5.Image;
@@ -8,7 +9,7 @@ export function sketch(p: p5) {
 		p.createCanvas(600, 400);
 		p.noLoop();
 
-		p.loadImage('/profile.jpeg', (image) => {
+		p.loadImage(ProfileImage, (image) => {
 			if (!image) return;
 
 			renderPortrait(image);
