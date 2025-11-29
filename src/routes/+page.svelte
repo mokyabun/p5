@@ -12,19 +12,19 @@
             <img class="rounded-2xl" src={FirstImage} alt="" />
             <p class="text-center">첫번째 과제</p>
         </a>
+        <a href={resolve('/fourth')}>
+            <img class="rounded-2xl" src={FourthImage} alt="" />
+            <p class="text-center">네번째 과제</p>
+        </a>
+    </div>
+    <div class="flex gap-2">
         <a href={resolve('/second')}>
             <img class="rounded-2xl" src={SecondImage} alt="" />
             <p class="text-center">두번째 과제</p>
         </a>
-    </div>
-    <div class="flex gap-2">
         <a href={resolve('/third')}>
             <img class="rounded-2xl" src={ThirdImage} alt="" />
             <p class="text-center">세번째 과제</p>
-        </a>
-        <a href={resolve('/fourth')}>
-            <img class="rounded-2xl" src={FourthImage} alt="" />
-            <p class="text-center">네번째 과제</p>
         </a>
     </div>
 </div>
